@@ -1,0 +1,25 @@
+@use "mixins" as m;
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    // Rédéfinir la taille par défaut d'1 rem à 10px plutôt que 16px
+    font-size: 62.5%;
+}
+
+body {
+    // On rédéfinit une taille par défaut à 16px
+    font-size: 1.6rem;
+
+    // Appliquer la mixin no-margin
+    @include m.no-margin;
+
+    font-family: "Roboto",Sans-serif;
+    font-weight: 400;
+}
+
+img {
+    width: 100%;
+}

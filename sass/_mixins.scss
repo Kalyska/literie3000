@@ -1,0 +1,27 @@
+@use 'variables' as v;
+
+@mixin no-margin {
+    margin: 0;
+    padding: 0;
+}
+
+@mixin button {
+    display: inline-block;
+    margin: 1rem 0;
+    color: white;
+    background-color: transparent;
+    border: none;
+    text-decoration: none;
+    padding: 1.5rem 2.5rem;
+    border-radius: 2px;
+
+    &:hover {
+        border: 1px solid v.$color-bg;
+    }
+}
+
+@mixin media($breakpoint) {
+    @media screen and (min-width: $breakpoint) {
+        @content;
+    }
+}

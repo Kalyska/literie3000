@@ -1,0 +1,44 @@
+@use 'variables' as v;
+@use 'mixins' as m;
+@import 'reset';
+@import 'fonts';
+
+body {
+    font-family: "Open Sans", sans-serif;
+    background-color: v.$color-bg;
+    padding: 2rem;
+}
+
+.logo-wrapper {
+    padding: 2rem 0;
+    text-align: center;
+
+    .logo {
+        width: 20rem;
+    }
+}
+
+.container {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 2rem 4rem 4rem;
+    background-color: white;
+    border-radius: 1rem;
+}
+
+header {
+    background-color: v.$color-primary;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 3rem;
+    align-items: center;
+    border-radius: 1rem;
+
+    .btn {
+        @include m.button
+    }
+}
+
+h2 {
+    text-align: center;
+}
