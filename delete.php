@@ -2,6 +2,7 @@
 $dsn = "mysql:host=localhost; dbname=literie3000";
 $db = new PDO($dsn, "root", "");
 
+// récupération du matelas en fonction de l'id
 if (isset($_GET["id"])) {
     $id = $_GET['id'];
     $query = $db->prepare('SELECT * FROM mattresses WHERE id = :id');
@@ -13,6 +14,9 @@ if (isset($_GET["id"])) {
         $query = $db->query("DELETE from mattresses WHERE id = $id");
         header("Location: index.php");
     }
+} else {
+    // si pas d'id on redirige vers l'accueil
+    header("Location: index.php");
 }
 ?>
 
