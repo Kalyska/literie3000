@@ -42,3 +42,26 @@ header {
 h2 {
     text-align: center;
 }
+
+hr {
+    width: 40%;
+}
+
+.mattress {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2rem;
+
+    .catalog-img {
+        width: 300px;
+    }
+}
+
+.delete {
+    text-align: center;
+
+    a {
+        @include m.button
+    }
+}
