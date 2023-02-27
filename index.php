@@ -27,14 +27,14 @@ include("templates/header.php");
                 <p>Taille : <?= $mattress["size"] ?></p>
 
                 <div class="actions">
-                    <a href="/literie3000/edit.php?id=<?= $mattress["id"] ?>" class="edit"><i class="fa-regular fa-pen-to-square"></i></a>
-                    <a href="/literie3000/delete.php?id=<?= $mattress["id"] ?>" class="delete"><i class="fa-solid fa-trash"></i></a>
+                    <a href="edit.php?id=<?= $mattress["id"] ?>"><i class="fa-regular fa-pen-to-square edit"></i></a>
+                    <a href="delete.php?id=<?= $mattress["id"] ?>"><i class="fa-solid fa-trash warning"></i></a>
                 </div>
             </div>
 
             <div class="prices">
-                <p><?= $mattress["price"] ?> €</p>
-                <p><?= $mattress["saleprice"] ?> €</p>
+                <p class="high"><?= $mattress["price"] ?> €</p>
+                <p class="low"><?= $mattress["saleprice"] ?> €</p>
             </div>
         </div>
     <?php

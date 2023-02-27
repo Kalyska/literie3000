@@ -181,8 +181,10 @@ include("templates/header.php");
         ?>
     </div>
 
-    <a href="/literie3000" class="btn">Annuler</a>
-    <input type="submit" value="Editer" class="btn">
+    <div class="form-group">
+        <a href="index.php" class="btn">Annuler</a>
+        <input type="submit" value="Editer" class="btn">
+    </div>
 </form>
 <?php
 include("templates/footer.php");

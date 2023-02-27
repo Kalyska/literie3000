@@ -35,10 +35,11 @@ header {
     border-radius: 1rem;
 
     .btn {
-        @include m.button(transparent)
+        @include m.button(transparent);
     }
 }
 
+// TITRES
 h2 {
     text-align: center;
 }
@@ -47,6 +48,11 @@ hr {
     width: 40%;
 }
 
+h3 {
+    text-transform: uppercase;
+}
+
+// INDEX
 .mattress {
     display: flex;
     justify-content: space-evenly;
@@ -56,13 +62,66 @@ hr {
     .catalog-img {
         width: 300px;
     }
+
+    .warning {
+        color: v.$color-warning;
+        font-size: 2rem;
+    }
+
+    .edit {
+        color: v.$color-primary;
+        font-size: 2rem;
+        margin-right: 2rem;
+    }
 }
 
+// ICONES
+i {
+    font-size: 1.6rem;
+    margin-right: 1rem;
+}
+
+// PRIX
+.prices {
+    .high {
+        text-decoration: line-through;
+    }
+
+    .low {
+        color: v.$color-warning;
+        font-size: 2rem;
+    }
+}
+
+// DELETE
 .delete {
     text-align: center;
 
     a {
         @include m.button(v.$color-primary);
         margin: 2rem;
+    }
+
+    .warning {
+        @include m.button(v.$color-warning);
+    }
+}
+
+// FORMULAIRES
+.form-group {
+    text-align: center;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    input,
+    select {
+        width: 50%
+    }
+
+    #inputPicture {
+        padding-left: 18%
     }
 }

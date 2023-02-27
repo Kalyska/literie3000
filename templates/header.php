@@ -17,5 +17,5 @@
                 <img src="img/logo-fond-transparent.png" alt="Literie 3000" class="logo">
             </a>
 
-            <a class="btn" href="/add">Ajouter un matelas</a>
+            <a class="btn" href="add.php"><i class="fa-solid fa-circle-plus"></i> Ajouter un matelas</a>
         </header>
