@@ -5,11 +5,11 @@
     padding: 0;
 }
 
-@mixin button {
+@mixin button ($bg) {
     display: inline-block;
     margin: 1rem 0;
     color: white;
-    background-color: transparent;
+    background-color: $bg;
     border: none;
     text-decoration: none;
     padding: 1.5rem 2.5rem;
