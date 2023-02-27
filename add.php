@@ -6,7 +6,6 @@ $db = new PDO($dsn, "root", "");
 $brands = $db->query("SELECT * FROM brands order by name")->fetchAll(PDO::FETCH_ASSOC);
 // on récupère les tailles
 $sizes = $db->query("SELECT * FROM sizes order by id")->fetchAll(PDO::FETCH_ASSOC);
-$nbmattresses = count($db->query("SELECT id FROM mattresses order by id")->fetchAll(PDO::FETCH_ASSOC));
 
 if (!empty($_POST)) {
     // si le formulaire est rempli on récupère les infos
