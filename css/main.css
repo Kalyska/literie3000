@@ -1,0 +1,193 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", Sans-serif;
+  font-weight: 400;
+}
+
+img {
+  width: 100%;
+}
+
+@font-face {
+  font-family: "nom";
+  src: url("../public/fonts/nomfichier.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #efefef;
+  padding: 2rem;
+}
+
+.logo-wrapper {
+  padding: 2rem 0;
+  text-align: center;
+}
+.logo-wrapper .logo {
+  width: 20rem;
+}
+
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 2rem 4rem 4rem;
+  background-color: white;
+  border-radius: 1rem;
+}
+
+header {
+  background-color: #0C4085;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 3rem;
+  align-items: center;
+  border-radius: 1rem;
+}
+header .btn {
+  display: inline-block;
+  margin: 1rem 0;
+  color: white;
+  background-color: transparent;
+  border: none;
+  text-decoration: none;
+  padding: 1rem 1.4rem;
+  border-radius: 10px;
+}
+header .btn:hover {
+  border: 1px solid #efefef;
+}
+
+h2 {
+  text-align: center;
+}
+
+hr {
+  width: 40%;
+}
+
+h3 {
+  text-transform: uppercase;
+}
+
+.mattress {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 2rem;
+}
+.mattress .catalog-img {
+  width: 300px;
+}
+.mattress .warning {
+  color: rgb(255, 63, 82);
+  font-size: 2rem;
+}
+.mattress .edit {
+  color: #0C4085;
+  font-size: 2rem;
+  margin-right: 2rem;
+}
+
+i {
+  font-size: 1.6rem;
+  margin-right: 1rem;
+}
+
+.prices .high {
+  text-decoration: line-through;
+}
+.prices .low {
+  color: rgb(255, 63, 82);
+  font-size: 2rem;
+}
+
+.delete {
+  text-align: center;
+}
+.delete a {
+  display: inline-block;
+  margin: 1rem 0;
+  color: white;
+  background-color: #0C4085;
+  border: none;
+  text-decoration: none;
+  padding: 1rem 1.4rem;
+  border-radius: 10px;
+  margin: 2rem;
+}
+.delete a:hover {
+  border: 1px solid #efefef;
+}
+.delete a .warning {
+  display: inline-block;
+  margin: 1rem 0;
+  color: white;
+  background-color: rgb(255, 63, 82);
+  border: none;
+  text-decoration: none;
+  padding: 1rem 1.4rem;
+  border-radius: 10px;
+}
+.delete a .warning:hover {
+  border: 1px solid #efefef;
+}
+
+.form-group {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.form-group input,
+.form-group select {
+  width: 50%;
+  padding: 0.6rem;
+  border-radius: 5px;
+  border: solid 1px #25262c;
+}
+
+.form-btn {
+  text-align: center;
+}
+.form-btn a {
+  display: inline-block;
+  margin: 1rem 0;
+  color: white;
+  background-color: #0C4085;
+  border: none;
+  text-decoration: none;
+  padding: 1rem 1.4rem;
+  border-radius: 10px;
+  margin: 1rem;
+}
+.form-btn a:hover {
+  border: 1px solid #efefef;
+}
+.form-btn .warning {
+  display: inline-block;
+  margin: 1rem 0;
+  color: white;
+  background-color: rgb(255, 63, 82);
+  border: none;
+  text-decoration: none;
+  padding: 1rem 1.4rem;
+  border-radius: 10px;
+  margin: 1rem;
+  font-size: 1.6rem;
+}
+.form-btn .warning:hover {
+  border: 1px solid #efefef;
+}
+
+/*# sourceMappingURL=main.css.map */

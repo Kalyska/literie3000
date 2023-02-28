@@ -100,28 +100,41 @@ i {
     a {
         @include m.button(v.$color-primary);
         margin: 2rem;
-    }
 
-    .warning {
-        @include m.button(v.$color-warning);
+        .warning {
+            @include m.button(v.$color-warning);
+        }
     }
 }
 
 // FORMULAIRES
 .form-group {
-    text-align: center;
     padding: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+
 
     input,
     select {
-        width: 50%
+        width: 50%;
+        padding: .6rem;
+        border-radius: 5px;
+        border: solid 1px v.$color-shadow;
+    }
+}
+
+.form-btn {
+    text-align: center;
+
+    a {
+        @include m.button(v.$color-primary);
+        margin: 1rem;
     }
 
-    #inputPicture {
-        padding-left: 18%
+    .warning {
+        @include m.button(v.$color-warning);
+        margin: 1rem;
+        font-size: 1.6rem;
     }
 }

@@ -181,9 +181,9 @@ include("templates/header.php");
         ?>
     </div>
 
-    <div class="form-group">
-        <a href="index.php" class="btn">Annuler</a>
-        <input type="submit" value="Editer" class="btn">
+    <div class="form-btn">
+        <a href="index.php">Annuler</a>
+        <input type="submit" value="Editer" class="warning">
     </div>
 </form>
 <?php

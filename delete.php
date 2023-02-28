@@ -38,7 +38,7 @@ if (isset($_GET["id"])) {
     <div class="container delete">
         <h2>Suppression du catalogue</h2>
         <p>Vous êtes sur le point de supprimer <?= $mattress["name"] ?> du catalogue.</p>
-        <div class="btn"><a href="index.php">Annuler</a> <a class="warning" href="delete.php?id=<?= $mattress["id"] ?>&confirm=true">Valider</a></div>
+        <div><a href="index.php">Annuler</a> <a class="warning" href="delete.php?id=<?= $mattress["id"] ?>&confirm=true">Valider</a></div>
 
     </div>
 </body>

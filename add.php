@@ -164,9 +164,9 @@ include("templates/header.php");
         ?>
     </div>
 
-    <div class="form-group">
+    <div class="form-btn">
         <a href="index.php">Annuler</a>
-        <input type="submit" value="Valider" class="btn">
+        <input type="submit" value="Valider" class="warning">
     </div>
 </form>
 
