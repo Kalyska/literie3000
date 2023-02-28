@@ -38,8 +38,8 @@ INSERT INTO brands (name) values
 ("Dorsoline"),
 ("MemoryLine");
 
-INSERT into mattresses (name, id_brand, id_size, price, saleprice) values
-("Transition", 1, 1, 759, 529),
-("Stan", 2, 1, 809, 709),
-("Teamasse", 3, 2, 759, 529),
-("Coup de boule", 1, 3, 1019, 509);
+INSERT into mattresses (name, id_brand, id_size, price, saleprice, picture) values
+("Transition", 1, 1, 759, 529, "35f872a2b7ab833a8e31422e59735c2c.webp"),
+("Stan", 2, 1, 809, 709, "ead0f36f1b4fe1869f04bcb213d89f63.webp"),
+("Teamasse", 3, 2, 759, 529, "b90e9a5470dd59e95a1cf56916f2055d.webp" ),
+("Coup de boule", 1, 3, 1019, 509, "de9852061a9d5ced127f82fc9a83db22.webp");

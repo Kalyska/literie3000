@@ -4,15 +4,18 @@ $db = new PDO($dsn, "root", "");
 
 // récupération du matelas en fonction de l'id
 if (isset($_GET["id"])) {
-    $id = $_GET['id'];
+    $id = trim(strip_tags($_GET['id']));
     $query = $db->prepare('SELECT * FROM mattresses WHERE id = :id');
     $query->bindParam(':id', $id, PDO::PARAM_INT);
     $query->execute();
     $mattress = $query->fetch();
 
     if (isset($_GET["confirm"]) && $_GET["confirm"] === 'true') {
-        $query = $db->query("DELETE from mattresses WHERE id = $id");
-        header("Location: index.php");
+        $query = $db->prepare("DELETE from mattresses WHERE id = :id");
+        $query->bindParam(':id', $id, PDO::PARAM_INT);
+        if ($query->execute()) {
+            header("Location: index.php");
+        }
     }
 } else {
     // si pas d'id on redirige vers l'accueil

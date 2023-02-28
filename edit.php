@@ -4,7 +4,7 @@ $db = new PDO($dsn, "root", "");
 
 // on récupère le matelas en fonction de l'id
 if (isset($_GET["id"])) {
-    $id = $_GET['id'];
+    $id = trim(strip_tags($_GET['id']));
     $query = $db->prepare('SELECT mattresses.*, brands.name as brand, size FROM mattresses
     INNER JOIN brands on brands.id = id_brand
     INNER JOIN sizes on id_size = sizes.id
